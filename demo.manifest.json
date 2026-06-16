@@ -1,0 +1,15 @@
+{
+  "name": "unirtos_aliyun_demos",
+  "type": "demo",
+  "platforms": [
+    "all"
+  ],
+  "depend_config": "depend.config",
+  "entries": [
+    {
+      "order": 420,
+      "entry_name": "unirtos_aliyun_demo",
+      "function": "unirtos_aliyun_demo_init"
+    }
+  ]
+}
