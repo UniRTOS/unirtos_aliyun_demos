@@ -52,7 +52,7 @@ if(_app_external_library_targets)
 	target_link_libraries(${target} PUBLIC ${_app_external_library_targets})
 endif()
 
-target_link_libraries_if(CONFIG_QOSA_LINK_SYSTEM_LIBRARIES_FUNC THEN ${target} system_os)
-target_link_libraries_if(CONFIG_QCM_MQTT_FUNC THEN ${target} qcm_mqtt)
-target_link_libraries_if(CONFIG_QCM_VTLS_FUNC THEN ${target} vtls)
-target_link_libraries_if(CONFIG_QCM_UTILS_UTILS_FUNC THEN ${target} utils)
+# UNcomment to add the libraries you need here.
+target_link_libraries(${target} qcm_mqtt)
+target_link_libraries(${target} vtls)
+target_link_libraries(${target} utils)
